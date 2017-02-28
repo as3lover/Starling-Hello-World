@@ -13,5 +13,10 @@ public class Game extends Sprite
         quad.y = 50;
         addChild(quad);
     }
+
+    public function start():void
+    {
+        trace('started');
+    }
 }
 }
