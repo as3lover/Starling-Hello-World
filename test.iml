@@ -16,11 +16,11 @@
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
+    <content url="file://$MODULE_DIR$/../GreenSock-AS3" />
+    <content url="file://$MODULE_DIR$/../Starling-Framework" />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
-    <content url="file://G:/Game Development/Sources/Starling 2.1" />
-    <content url="file://G:/Game Development/Sources/greensock" />
     <orderEntry type="jdk" jdkName="AIRSDK" jdkType="Flex SDK Type (new)" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
