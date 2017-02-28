@@ -97,5 +97,4 @@ $RECYCLE.BIN/
 
 # End of https://www.gitignore.io/api/actionscript,windows,intellij
 
-
- ~*.docx
+~*.docx
