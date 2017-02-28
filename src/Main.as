@@ -16,6 +16,7 @@ public class Main extends Sprite {
         _starling.showStats = true;
 
     }
+    // branch
 
     private function onRootCreated(event:Event, root:Game):void {
         root.start(); // 'start' defined in the 'Game' class
