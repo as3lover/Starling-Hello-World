@@ -16,7 +16,7 @@ public class Main extends Sprite {
     }
 
     private function onRootCreated(event:Event, root:Game):void {
-        root.start(); // 'start' needs to be defined in the 'Game' class
+        root.start(); // 'start' defined in the 'Game' class
     }
 }
 }
