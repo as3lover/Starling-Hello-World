@@ -2,8 +2,8 @@
 <module type="Flex" version="4">
   <component name="FlexBuildConfigurationManager" active="test">
     <configurations>
-      <configuration name="test" pure-as="true" main-class="Main" output-file="Main.swf" output-folder="$MODULE_DIR$/out/production/test" use-html-wrapper="true" wrapper-template-path="$MODULE_DIR$/html-template">
-        <dependencies target-player="24.0">
+      <configuration name="test" target-platform="Mobile" pure-as="true" main-class="Main" output-file="Main.swf" output-folder="$MODULE_DIR$/out/production/test">
+        <dependencies>
           <entries>
             <entry library-id="d336730b-fb1b-4af0-b990-4cea300d2359">
               <dependency linkage="Merged" />
@@ -13,8 +13,8 @@
         </dependencies>
         <compiler-options />
         <packaging-air-desktop />
-        <packaging-android />
-        <packaging-ios />
+        <packaging-android enabled="true" package-file-name="test" />
+        <packaging-ios package-file-name="test" />
       </configuration>
     </configurations>
     <compiler-options />
