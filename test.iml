@@ -13,7 +13,7 @@
         </dependencies>
         <compiler-options />
         <packaging-air-desktop />
-        <packaging-android enabled="true" package-file-name="test" />
+        <packaging-android enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/Main-android-descriptor.xml" package-file-name="test" />
         <packaging-ios package-file-name="test" />
       </configuration>
     </configurations>

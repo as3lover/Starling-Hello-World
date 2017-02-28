@@ -13,6 +13,8 @@ public class Main extends Sprite {
         _starling = new Starling(Game, stage);
         _starling.addEventListener(Event.ROOT_CREATED, onRootCreated);
         _starling.start();
+        _starling.showStats = true;
+
     }
 
     private function onRootCreated(event:Event, root:Game):void {
