@@ -8,6 +8,7 @@ public class Main extends Sprite
 {
     private var _starling:Starling;
 
+
     public function Main()
     {
         _starling = new Starling(Game, stage);
