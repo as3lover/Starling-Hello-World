@@ -1,8 +1,10 @@
 package
 {
 import flash.geom.Point;
+import flash.system.System;
 
 import starling.core.Starling;
+import starling.display.Image;
 
 import starling.display.Quad;
 import starling.display.Sprite;
@@ -11,11 +13,14 @@ import starling.events.ResizeEvent;
 import starling.events.Touch;
 import starling.events.TouchEvent;
 import starling.events.TouchPhase;
+import starling.utils.AssetManager;
 import starling.utils.Color;
 
 public class Game extends Sprite
 {
-    private var quad:Quad
+    public static var asset:AssetManager;
+    private var quad:Quad;
+    private var _progressBar:ProgressBar;
 
     public function Game()
     {
@@ -30,7 +35,36 @@ public class Game extends Sprite
         quad.x = 50;
         quad.y = 50;
         addChild(quad);
+
+        _progressBar = new ProgressBar(175, 20);
+        _progressBar.x = (stage.stageWidth - _progressBar.width) / 2;
+        _progressBar.y =  stage.stageHeight * 0.7;
+        addChild(_progressBar);
+
+        asset = new AssetManager();
+        asset.enqueue(EmbeddedAssets);
+
+        asset.loadQueue(function(ratio:Number):void
+        {
+            _progressBar.ratio = ratio;
+            if (ratio == 1)
+            {
+                // now would be a good time for a clean-up
+                System.pauseForGCIfCollectionImminent(0);
+                System.gc();
+
+                onComplete();
+            }
+        });
     }
+
+    private function onComplete():void {
+        addChild(new Image(asset.getTexture("logo")));
+    }
+    
+    
+
+    
 
     private function setup(width:Number, height:Number):void
     {
