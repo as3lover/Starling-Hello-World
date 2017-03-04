@@ -8,6 +8,9 @@
             <entry library-id="d336730b-fb1b-4af0-b990-4cea300d2359">
               <dependency linkage="Merged" />
             </entry>
+            <entry library-id="02b80e14-eec1-49ed-af8f-5ca95c0fac9f">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
           <sdk name="AIRSDK" />
         </dependencies>
@@ -31,6 +34,16 @@
         <properties id="d336730b-fb1b-4af0-b990-4cea300d2359" />
         <CLASSES>
           <root url="file://$MODULE_DIR$/../Starling-Framework/starling/src" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="02b80e14-eec1-49ed-af8f-5ca95c0fac9f" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../GreenSock-AS3/src" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
