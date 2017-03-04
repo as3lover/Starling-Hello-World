@@ -90,6 +90,7 @@ public class Game extends Sprite
 
         _box = new Quad(50,50, Color.RED);
         addChild(_box)
+        _box.visible =false;
     }
     
     
